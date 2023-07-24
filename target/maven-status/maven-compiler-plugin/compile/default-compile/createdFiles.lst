@@ -1,0 +1,5 @@
+com\example\EVC3Jara\Repository\InstrumentoRepository.class
+com\example\EVC3Jara\Repository\CategoriaRepository.class
+com\example\EVC3Jara\Entity\Categoria.class
+com\example\EVC3Jara\DemoApplication.class
+com\example\EVC3Jara\Entity\Instrumento.class
