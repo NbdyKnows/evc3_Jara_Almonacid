@@ -16,7 +16,7 @@ GET {{api}}/instrumentos
 POST {{api}}/instrumentos
 Content-Type: application/json
 
-{"nombre": "Guitarra", "categoria": "http://localhost/api/ec3/categorias/1"}
+{"nombre": "Flauta", "categoria": "http://localhost/api/ec3/categorias/2"}
 ###
 GET {{api}}/instrumentos/1/categoria
 ###

@@ -1,7 +1,9 @@
 package com.example.EVC3Jara.Entity;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -25,7 +27,7 @@ public class Categoria {
 
     @OneToMany(targetEntity = Instrumento.class, mappedBy = "categoria", cascade = CascadeType.ALL)
     @OrderBy("nombre ASC")
-    private List<Instrumento> instrumentos = new ArrayList<>();
+    private Set<Instrumento> instrumentos = new HashSet<>();
 
     public Integer getId() {
         return id;
@@ -43,13 +45,15 @@ public class Categoria {
         this.nombre = nombre;
     }
 
-    public List<Instrumento> getInstrumentos() {
+    public Set<Instrumento> getInstrumentos() {
         return instrumentos;
     }
 
-    public void setInstrumentos(List<Instrumento> instrumentos) {
+    public void setInstrumentos(Set<Instrumento> instrumentos) {
         this.instrumentos = instrumentos;
     }
+
+    
     
     
 }
